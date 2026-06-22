@@ -2,9 +2,9 @@ name: IT
 
 on:
   push:
-    branches: ["coder-2"]
+    branches: ["DevopsEngineer,main,coder-1,BackendEngineer"]
   pull_request:
-    branches: ["coder-2"]
+    branches: ["DevopsEngineer,main,coder-1,BackendEngineer"]
 
 jobs:
   test-lint-build:
