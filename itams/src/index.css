@@ -148,38 +148,38 @@ html {
 /* Hero Section */
 .hero {
   padding: 150px 80px 80px;
-  background: linear-gradient(135deg, #f9fbff 0%, #f0f4ff 100%);
+  background: #f1f5fb;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  min-height: 520px;
+  min-height: 480px;
   justify-content: center;
 }
 
 .hero h1 {
-  font-size: 54px;
+  font-size: 46px;
   font-weight: 800;
   color: #091e42;
   line-height: 1.15;
-  margin: 0 0 16px 0;
-  letter-spacing: -1px;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.5px;
 }
 
 .hero h2 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   color: #0056d6;
-  margin: 0 0 16px 0;
-  letter-spacing: -0.2px;
+  margin: 0 0 14px 0;
+  letter-spacing: 0;
 }
 
 .hero p {
-  font-size: 16px;
+  font-size: 14.5px;
   color: #5e6c84;
-  max-width: 580px;
+  max-width: 500px;
   line-height: 1.6;
-  margin: 0 0 32px 0;
+  margin: 0 0 28px 0;
 }
 
 .hero-buttons {
@@ -215,8 +215,8 @@ html {
 
 /* Features Section */
 .section {
-  padding: 70px 80px 90px 80px;
-  background-color: #f8fafc;
+  padding: 60px 80px 80px 80px;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -266,21 +266,21 @@ html {
 
 .card {
   background-color: #ffffff;
-  padding: 24px;
-  border-radius: 12px;
-  border: 1px solid #f0f2f5;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+  padding: 20px 22px;
+  border-radius: 10px;
+  border: 1px solid #e8edf4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   text-align: left;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 16px;
+  gap: 14px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
 }
 
 .card-icon-wrapper {
@@ -324,12 +324,12 @@ html {
 
 /* Footer Styling */
 footer {
-  background-color: #0056d6;
-  color: #ffffff;
+  background-color: #1e293b;
+  color: #cbd5e1;
   text-align: center;
-  padding: 24px 20px;
+  padding: 22px 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   border: none;
 }
 

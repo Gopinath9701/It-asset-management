@@ -2,11 +2,10 @@ import "./index.css";
 import { useState } from "react";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import Register from "./components/Register";
 import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
-  const [view, setView] = useState("home"); // "home" | "login" | "register" | "forgot-password"
+  const [view, setView] = useState("home"); // "home" | "login" | "forgot-password"
   const [activeTab, setActiveTab] = useState("home");
 
   const scrollToSection = (id) => {
@@ -68,9 +67,6 @@ function App() {
             <button className="outline-btn" onClick={() => setView("login")}>
               Login
             </button>
-            <button className="blue-btn" onClick={() => setView("register")}>
-              Register
-            </button>
           </div>
         )}
       </nav>
@@ -79,20 +75,16 @@ function App() {
       {view === "login" && (
         <Login
           onBack={() => setView("home")}
-          onRegisterClick={() => setView("register")}
           onForgotPasswordClick={() => setView("forgot-password")}
         />
       )}
-      {view === "register" && (
-        <Register onBack={() => setView("home")} onLoginClick={() => setView("login")} />
-      )}
+
       {view === "forgot-password" && (
         <ForgotPassword onLoginClick={() => setView("login")} />
       )}
       {view === "home" && (
         <Home
           onLoginClick={() => setView("login")}
-          onRegisterClick={() => setView("register")}
         />
       )}
     </div>

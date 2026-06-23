@@ -8,7 +8,7 @@ import {
   FaPhone,
 } from "react-icons/fa";
 
-export default function Home({ onLoginClick, onRegisterClick }) {
+export default function Home({ onLoginClick }) {
   return (
     <div>
       {/* Hero Section */}
@@ -26,9 +26,6 @@ export default function Home({ onLoginClick, onRegisterClick }) {
         <div className="hero-buttons">
           <button className="blue-btn" onClick={onLoginClick}>
             Login
-          </button>
-          <button className="outline-btn" onClick={onRegisterClick}>
-            Register
           </button>
         </div>
       </section>

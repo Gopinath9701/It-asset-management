@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import "../App.css"; // or wherever your CSS file is located
 
-export default function Login({ onRegisterClick, onForgotPasswordClick }) {
+export default function Login({ onForgotPasswordClick }) {
   const [formData, setFormData] = useState({
     nameOrEmail: "",
     employeeId: "",
@@ -68,18 +68,7 @@ export default function Login({ onRegisterClick, onForgotPasswordClick }) {
         </a>
 
         <button type="submit">Login</button>
-        <div className="links">
-          Don't have an account?{" "}
-          <a
-            href="/register"
-            onClick={(e) => {
-              e.preventDefault();
-              onRegisterClick();
-            }}
-          >
-            Register here
-          </a>
-        </div>
+
       </form>
     </div>
   );
